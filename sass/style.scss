@@ -1,0 +1,181 @@
+/*
+* Theme Name: HackerYou Starter Theme
+* Theme URI: http://hackeryou.com;
+* Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
+* Version: 1.0
+* Author: Magdalena ANnese
+* Author URI: http://wyndcreative.com
+*/
+
+@import 'normalize';
+@import 'typography';
+@import 'navigation';
+@import 'sidebar';
+@import 'comments';
+@import 'footer';
+/*
+====================================
+Default Styling
+====================================
+*/
+
+
+
+
+
+html{
+	margin-top: 0px;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	color: #333;
+}
+
+.main{
+	width:100%;
+	height:100vh;
+}
+
+.content {
+	margin: 0 auto;
+	width:100%;
+}
+
+.full {
+	width: 100%;
+}
+video{
+    width: 100%;
+    z-index: -1;
+    position:absolute;
+    top: 0;
+}
+.navItem{
+	width:48%;
+	display: inline-block;
+}
+.headerContainer {
+	width: 100%;
+	margin-right:0;
+	background: rgba(225, 225, 225, 0.5);
+    padding-top: 16px;
+    position:fixed;
+    z-index: 999;
+	.navItem h1{
+		font-size: 2rem;
+		display: inline-block;
+		color:black;
+    	margin-top:5px;
+		font-weight: 200;
+		text-transform: uppercase;
+		.navItem a{
+			color: black;
+		}
+	}
+}
+.wrapper{
+	width:85%;
+	margin: 0 auto;
+}
+.navBar{
+	display: flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    flex-direction:row;
+    width:100%;
+}
+ul.menu {
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+ul.menu li a {
+    color: black;
+    padding: 10px;
+  	background: transparent;
+  	display: inline-block;
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-family: 'Ubuntu', sans-serif;
+}    
+
+.homeImage{
+	width:100% ;
+	height:100vh;
+	background-repeat: no-repeat;
+	background-size:cover !important;
+	margin:0;
+	margin-right:0;
+
+}
+.colour-change{
+    background: #42353d;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.appear{
+    opacity: 1;
+}
+.headerCenter{
+	width:60%;
+	margin: 0 auto;
+	img{
+		width:100%;
+	}
+}
+
+.btnSearch {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2;
+    font-size: 1.3rem;
+    padding: 15px 0px;
+    text-align: center;
+    position: relative;
+    width: 10%;
+    top: -2px;
+    left: -4px;
+    box-shadow: none;
+    border-radius: 5px;
+    border:none;
+    text-decoration: none;
+    border-color: #c83ca8;
+    color: #ffffff;
+    background-color:#c83ca8;
+    margin: 0 auto;
+    display: block;
+}
+
+// end of header
+// start of about
+
+.intro{
+	width:100%;
+	height:50vh;
+	background: #D0EAE9;
+h1{
+    font-family: 'Oswald', serif;
+    font-weight: 500;
+    font-size: 5rem;
+	}
+}
+.intro{
+	display: flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    width:100%;
+}
+.introBox1{
+	background: blue;
+	width:50%;
+}
+.introBox2{
+	background:red;
+	width:50%;
+}
+
+
