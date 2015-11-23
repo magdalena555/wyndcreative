@@ -10,6 +10,11 @@
  s.parentNode.insertBefore(g,s)}(document,"script"));
 </script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.pkgd.js"></script>
+
 <?php wp_footer(); ?>
 </body>
 </html>
+
+<!-- design inspiration: -->
+<!-- Oshine  -->
