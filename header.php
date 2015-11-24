@@ -21,18 +21,19 @@
 
 
 <body <?php body_class(); ?>>
+    <div id="fullpage">
+        <div class="section">
+          <header>
+              <div class="headerContainer nav">
+                  <div class="navWrapper">
+                      <div class="navItem">
+                          <?php wp_nav_menu( array(
+                            'container' => false,
+                            'theme_location' => 'primary'
+                          )); ?>
+                      </div>
+                  </div>
+              </div> 
 
-<header>
-    <div class="headerContainer nav">
-        <div class="navWrapper">
-            <div class="navItem">
-                <?php wp_nav_menu( array(
-                  'container' => false,
-                  'theme_location' => 'primary'
-                )); ?>
-            </div>
-        </div>
-    </div> 
-
-</header><!--/.header-->
+          </header><!--/.header-->
 

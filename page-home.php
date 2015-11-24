@@ -19,6 +19,7 @@
         </div>
     </div> 
 </div>
+</div> <!-- end of header section fullpage -->
 <!-- end of header -->
 <!-- start of introduction -->
 <section class="intro wrapper" id="about">
@@ -97,29 +98,18 @@
     <!-- end of deliver in style section -->
 </section> 
 <!-- end of colored information sections -->
-<!-- start of filler image -->
-<section class="fillerImage">
-     <div class="fillerWrapper"></div>
-</section>
-<!-- end of filler tools image -->
-<!-- start of portfolio -->
-<section class="portfolioSection" id="portfolio">
-     <div class="wrapper">
-        <!-- portfolio title -->
-        <div class="portfolioMainTitle wow fadeInDown" data-wow-duration="1s"  data-wow-offset="5">
-            <h1><?php the_field("portfolio-title"); ?></h1>
-        </div>
+<!-- start of portfolio --> 
         <!-- portfolio content box -->
-        <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true
+        <div class="portfolio gallery js-flickity" id="portfolio" data-flickity-options='{ "freeScroll": true, "wrapAround": true
                      }'>
             <!-- porfolio items -->
             <?php while( has_sub_field('portfolio') ): ?>
             <div class="portfolio-item gallery-cell">
                 <!-- portfolio image -->
-                
-               <!--  <?php //$image = get_sub_field('portfolio-image'); ?>
-                <img src="<?php //echo $image['sizes']['large'] ?>">
- -->
+               
+                <?php $image = get_sub_field('portfolio-image'); ?>
+                <img src="<?php echo $image['sizes']['large'] ?>">
+
                 <?php $image = get_sub_field("portfolio-image"); ?>
                 <div class="portfolio-image" style="background-image:url(<?php echo $image["url"]; ?>); background-repeat: no-repeat;" > 
                 </div>
@@ -130,52 +120,50 @@
                     <p> <?php the_sub_field('portfolio-content'); ?></p>
                     <!-- portfolio link -->
                     <a class="button" href="<?php the_sub_field('portfolio-link'); ?>">View Live Site</a>
-                </div>
+                </div> 
             </div>
             <?php endwhile; ?>
             <!-- end of portfolio item -->
         </div> <!-- end of portfolio content box -->
-    </div> <!-- end of wrapper -->
-</section>
 <!-- end of portfolio section -->
-<!-- start of idea section-->
-
-<section class="idea wrapper">
-    <h1 class="ideaTitle wow fadeInUp" data-wow-duration="1s"  data-wow-offset="5"> <?php the_field("idea-title"); ?></h1>
-    <h2 class="ideaContent wow fadeInUp" data-wow-duration="1s"  data-wow-offset="5"> <?php the_field("idea-content"); ?></h2>
-     <a  href="#contact" class="button wow fadeInUp" data-wow-duration="1s"  data-wow-offset="5" type="submit" value="submit" ><?php the_field("idea-button"); ?></a>
-</section>
-<!-- end of idea section -->
 <!-- start of footer -->
 <section class="footer wrapper " id="contact">
-        <div class=" footerContent wow fadeInLeft" data-wow-duration="1s"  data-wow-offset="5">
-            <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-                <img class="wow fadeInDown" data-wow-duration="1s" data-wow-offset="5" src="<?php bloginfo("template_url")?>/images/logo.svg">
-            <?php endwhile; // end the loop?>
-
-           
-            <h2><i class="fa fa-envelope"></i><span>Email</span></h2>
-            <div class="line"></div>
-            <p><a href="mailto:hello@wyndcreative.com">hello@wyndcreative.com</a></p>
-            
-            <h2><i class="fa fa-phone"></i><span>Phone</span></h2>
-            <div class="line"></div>
-            <p><a href="#"> <?php the_field("contact-number"); ?> </a></p>
-            <h2><i class="fa fa-github"></i><span>github</span></h2>
-            <div class="line"></div>
-            <p><a href="https://github.com/magdalena555"> <?php the_field("github"); ?> </a></p>
+        <div class="footerFilter"></div>
+        <div class=" footerContent">
+            <!-- windmill -->
+            <div class="footerImage wow rotateIn " data-wow-duration="4s"  data-wow-offset="10" data-wow-iteration="10">
+                <?php $image = get_field('footer-image'); ?>
+                <img src="<?php echo $image['sizes']['large'] ?>"> 
+            </div> 
+            <!-- get in touch info -->
+            <div class="idea ">
+                <h1 class="ideaTitle wow fadeInUp" data-wow-duration="1s"  data-wow-offset="5"> <?php the_field("idea-title"); ?></h1>
+                <h2 class="ideaContent wow fadeInUp" data-wow-duration="1s"  data-wow-offset="5"> <?php the_field("idea-content"); ?></h2>
+            </div>
+           <!-- contact information -->
+            <div class="infoparent">
+                <div class="info wow fadeInUp" data-wow-duration="1s"  data-wow-offset="5">
+                    <h2><i class="fa fa-envelope"></i><span>Email</span></h2>
+                    <div class="line"></div>
+                    <p><a href="mailto:hello@wyndcreative.com">hello@wyndcreative.com</a></p>
+                </div>
+                <div class="info wow fadeInUp" data-wow-duration="1s"  data-wow-offset="5">
+                    <h2><i class="fa fa-phone"></i><span>Phone</span></h2>
+                    <div class="line"></div>
+                    <p><a href="#"> <?php the_field("contact-number"); ?> </a></p>
+                </div>    
+                <div class="info wow fadeInUp" data-wow-duration="1s"  data-wow-offset="5">
+                    <h2><i class="fa fa-github"></i><span>github</span></h2>
+                    <div class="line"></div>
+                    <p><a href="https://github.com/magdalena555"> <?php the_field("github"); ?> </a></p>
+                </div>
+            </div>
            <!--  <div class="social">
                 <p><?php the_field("linkedin"); ?></p>
                 <p><?php the_field("twitter"); ?></p>
                 
             </div>  -->
         </div>
-        <div class="footerImage wow rotateIn " data-wow-duration="4s"  data-wow-offset="10" data-wow-iteration="3">
-            <?php $image = get_field('footer-image'); ?>
-            <img src="<?php echo $image['sizes']['large'] ?>"> 
-        </div>
-        <!-- footer form -->
-            <?php //echo do_shortcode('[contact-form-7 id="105" title="Contact form 1"]'); ?>
 </section>
 
 

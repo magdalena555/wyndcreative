@@ -115,7 +115,7 @@ ul.menu li a {
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
-	color: black;
+	color: white;
 	transition: 0.5s all;
 }
 ul.menu li a:hover{
@@ -125,7 +125,7 @@ ul.menu li a:hover{
 /*sticky nav bar*/
 
 .colour-change{
-	background: white;
+	background: black;
 	opacity: 1;
 }
 .appear{
@@ -137,7 +137,8 @@ ul.menu li a:hover{
 .headerCenter{
 	width:53%;
 	margin: 0 auto;
-	padding:110px 0px;
+	padding-bottom: 170px;
+    padding-top: 150px;
 	img{
 		width:100%;
 	}
@@ -401,7 +402,7 @@ ul.menu li a:hover{
 
 .fillerImage{
 	width:100%;
-	background: url("images/sky1.jpg");
+	background: url("images/sky1.jpg") fixed;
     background-size: cover; 
     background-position: 0 30%;
     padding:15% 0;
@@ -416,15 +417,7 @@ ul.menu li a:hover{
 	left:0;
 	right:0;
 }
-// end of filler image
-// start of portfolio section
-.portfolioSection{
-	width:100%;
-	background:#DCE4E8;
-	.wrapper{
-		padding-top: 5%;
-	}
-}
+
 .portfolioMainTitle{
 	h1{
 		color: black;
@@ -439,44 +432,54 @@ ul.menu li a:hover{
     	padding:20px; 
 	}
 }
-.portfolio-image{
-	width:50%;
-	background-size: cover;
-	background-position: center;
 
-}
  .portfolio-info{
+ 	position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width:30%;
+    z-index: 2;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: 2%;
+    border-radius: 2px;
  	text-align: left;
- 	width:50%;
- 	margin:0 auto;
- 	background: white;
-	padding:5%;
  	h1{
- 		color: black;
+ 		color: white;
 		font-family: "Montserrat","Open Sans","Arial",sans-serif;
 		font-weight: 300;
 		font-size: 1.5rem;
 	    letter-spacing: 0px;
 	    text-transform: uppercase;
     	margin:0;
-    	text-align: center;
+    	text-align: left;
+    	font-weight: 700;
+    	letter-spacing: 1px;
+    	font-size: 1rem;
+    	line-height: 25px;
  	}
     h2{
 		color: #10ECE4;
 		font-family: "Montserrat","Open Sans","Arial",sans-serif;
 		font-weight: 300;
-		font-size: 1.2rem;
+		font-size: .8rem;
 	    letter-spacing: 0px;
 	    text-transform: uppercase;
     	margin:0;
-    	text-align: center;
+    	text-align: left;
 	}
 	p{
-	    font-size: 1.2rem;
+	    font-size: .7rem;
 	    line-height: 1.8;
-	    color: #3e464a;
+	    color: white;
 	    font-family: "raleway", sans-serif;
-	    padding-top:15px;
+	    font-weight: 700;
+    	letter-spacing: 1px;
+    	text-transform: lowercase;
+    	font-size: 12px;
+    	margin-bottom: 5%;
 	}
 }
 
@@ -485,12 +488,15 @@ ul.menu li a:hover{
     flex-wrap:wrap;
     flex-direction:row;
     width: 100%;
-    margin:15px;
     text-align: left;
-    box-shadow: 1px 1px 15px 5px #ccc;
+    position: relative;
+    height:600px;
     img{
-    	width:50%;
-    	margin:0 auto;
+    	width:100%;
+		background-size: cover;
+		background-position: center;
+		background-repeat:no-repeat;
+		height:600px
     }
 }
 
@@ -513,16 +519,11 @@ ul.menu li a:hover{
 }
 
 .idea{
-	width:100%;
-	padding:5% 12%;
 	text-align: center;
-	background:#10ECE4;
 	line-height: 1.8;
+	font-size: .9rem;
 	h1{
 		margin:0;
-	}
-	h2{
-		padding-bottom: 2%;
 	}
 	.button{
 		background: #ec9d8c;
@@ -533,47 +534,53 @@ ul.menu li a:hover{
 }
 .footer{
 	width:100%;
-    background: black;
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction:row;
+    background: url("images/sky1.jpg");
+    background-size: cover; 
+ 	position: relative;
+}
+.footerFilter{
+	background: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
 }
 
 .footerContent{
-	width:50%;
+	width:100%;
+	z-index: 2;
+	position: relative;
 	.line{
     	border: solid 2px #10ECE4;;
     	display: block;
     	width: 35px;
+    	margin:0 auto;
     }
 	i{
-		display: block;
-	}
-	img{
-		width:50%;
 		display: block;
 	}
 	h1{
 		color: #f8f8f8;
 		font-family: "Montserrat","Open Sans","Arial",sans-serif;
 		font-weight: 300;
-		font-size: 1.7rem;
+		font-size: 1.5rem;
 	    letter-spacing: 0px;
 	    text-transform: uppercase;
     	line-height: 42px;
-    	text-align: left;
+    	text-align: center;
     	margin: 0px;	 
 	}
 	h2{
 		color: white;
 		font-family: "Montserrat","Open Sans","Arial",sans-serif;
 		font-weight: 300;
-		font-size: 1.2rem;
+		font-size: 1rem;
 	    letter-spacing: 0px;
-	    text-transform: uppercase;
-    	line-height: 42px;
-    	text-align: left;
-    	margin: 5px 0px;		}
+    	text-align: center;
+    	padding-left: 2%;
+    	padding-right: 2%;
+		}
 	a{
 	
 	    font-size: .9rem;
@@ -584,14 +591,25 @@ ul.menu li a:hover{
 	    margin:0;
 	}
 	p{
-		font-size: 1.1rem;
+		font-size: 1rem;
 		margin:0;
 	}
 }
-.footerImage{
-	width:40%;
-}
 
+.footerImage{
+	width:16%;
+	margin:0 auto;
+	display: block;
+}
+.infoparent{
+	display: flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+}
+.info{
+	width:33.33%;
+	text-align: center;
+}
 
 .flickity-prev-next-button.previous, 
 .flickity-prev-next-button.next, 
@@ -602,10 +620,6 @@ ul.menu li a:hover{
 // RESPONSIVE WORK
 
 @media all and (max-width: 1290px) { 
-.headerCenter{
-		padding-bottom: 100px;
-		padding-top:100px;
-	}
 	.headerCenter h2 {
     	font-size: 1.5rem;
 	}
@@ -685,13 +699,6 @@ ul.menu li a:hover{
 	    line-height: 1.7;
  }
 
-
-    .portfolio-item{
-		display: flex;
-	    flex-wrap:wrap;
-	    // flex-direction:column;
-	}
-
 	.portfolio-info p {
     	font-size: .9rem;
 	    line-height: 1.7;
@@ -709,54 +716,39 @@ ul.menu li a:hover{
     	padding: 10px;
     	font-size: .9rem;
 	}
+	.portfolio-info {
+	    width: 40%;
+	}
 }
 // small devices tablets
 @media all and (max-width: 740px) {
-    .gallery{
-		display: flex;
-	    flex-wrap:wrap;
-	    flex-direction:column;
-	    // height:100vh;
+	.footerContent a {
+		font-size: .7rem;
 	}
-
-	// .portfolio-image{
-	// 	width:100%;
-
-	// } 
-	// .portfolio-info{
-	// 	width:100%;
-	// }
+	.portfolio-info p{
+		font-size: .7rem;
+		line-height: 1.4;
+	}
+ 
 	ul.menu li a {
     	padding: 0px;
     	font-size: .6rem;
 	}
-	.portfolio-info{
-		width:100%;
-		height:450px;
-		// padding-top:50%;
-		// padding-bottom:50%;
 
-	}
 	.portfolio-image{
 		width:100%;
 		height:450px;
-		// padding-top:50%;
-		// padding-bottom:50%;
+	
 	}
-	.portfolio-info p {
-    padding: 15px 0 15px 0;
-	}
-	.portfolio-info p {
-    	font-size: 1.5rem;
-	}
-	.portfolioSection .wrapper {
-    	padding-top: 2%;
-	}
+	
 	.wrapper{
 		padding:5%;
 	}
 	.fillerImage {
     	padding: 25% 0;
+	}
+	.footerContent h2 {
+    	font-size: .9rem;
 	}
 }
 
@@ -857,25 +849,21 @@ ul.menu li a:hover{
 	 	font-size: .9rem;
 	    line-height: 1.7;
 	}
-	.portfolio-info{
-		width:100%;
-		height:400px;
-		// padding-top:50%;
-		// padding-bottom:50%;
-
+	.portfolio-item{
+	    height:500px;
+	    img{
+			height:500px;
+	    }
 	}
 	.portfolio-image{
 		width:100%;
 		height:400px;
-		// padding-top:50%;
-		// padding-bottom:50%;
 	}
 	.fillerImage {
     	padding: 30% 0;
 	}
-
-	.portfolio-info p {
-    	font-size: 1rem;
+	.portfolio-info {
+ 	   width: 60%;
 	}
 
 	.portfolioMainTitle h1 {
@@ -883,7 +871,20 @@ ul.menu li a:hover{
 	}	
 	.portfolio-info h1, .portfolio-info h2 {
 		font-size: 1rem;
-		text-align: center;
+	}
+	.portfolio-info{
+ 		position: absolute;
+    	bottom: 0;
+    	right: 0;
+    	left:0;
+    	width:100%;
+    	padding: 5%;
+	}
+	.infoparent{
+		flex-direction: row;
+	}
+	.info{
+		width:100%;
 	}
 	.ideaTitle{
 		font-size: 1.2rem;
