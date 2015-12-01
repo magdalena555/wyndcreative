@@ -1,6 +1,4 @@
-<footer>
-  
-</footer>
+
 </div> <!-- end of fullpage -->
 <script>
 /* Google Analytics! */
@@ -16,5 +14,3 @@
 </body>
 </html>
 
-<!-- design inspiration: -->
-<!-- Oshine  -->

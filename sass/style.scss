@@ -22,7 +22,7 @@ Default Styling
 
 html{
 	margin-top: 0px;
-	max-width: 1290px;
+
 }
 
 h1{
@@ -77,6 +77,7 @@ video{
     z-index: -1;
     position:absolute;
     top: 0;
+
 }
 // start of navigation
 .navItem{
@@ -87,13 +88,14 @@ video{
 	width: 100%;
 	margin-right:0;
 	background: transparent;
-	padding-top: 16px;
+	padding:1.5%;
     position:fixed;
     z-index: 999;
     opacity: 0;
     transition: all 0.5s;
 	position:fixed;
 	top:0;
+
 
 }
 .navWrapper{
@@ -103,20 +105,18 @@ video{
 
 ul.menu {
     text-align: center;
-    padding-bottom: 10px;
     transition: 1s all;
 }
 ul.menu li a {
-    
-    padding: 10px;
   	background: transparent;
   	display: inline-block;
-	font-size: 1.2rem;
+	font-size: .9rem;
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
 	color: white;
 	transition: 0.5s all;
+	padding:0 4%;
 }
 ul.menu li a:hover{
 	color:#10ECE4;
@@ -139,16 +139,18 @@ ul.menu li a:hover{
 	margin: 0 auto;
 	padding-bottom: 170px;
     padding-top: 150px;
+    padding-bottom: 11%;
+    padding-top: 12%;
 	img{
 		width:100%;
 	}
 	 h2 {
 	    font-family: 'Montserrat', sans-serif;
 	    font-size: 2rem;
-	    padding-left: 100px;
 	    line-height: 1.5;
 	    letter-spacing: 7px;
 	    color:white;
+	    text-align: center;
 	}
 }
 // header button
@@ -212,11 +214,12 @@ ul.menu li a:hover{
 	width:50%;
 	img{
     	display: block;
-    	width:55%;
+    	width:36%;
     	padding-top:3%;
     	margin:0 auto;
 	}
 }
+
 
 .introBox2{
 	text-align: left;
@@ -314,6 +317,7 @@ ul.menu li a:hover{
 	
 }
 // strengthen brands
+
 .two{
 	background: #ec9d8c;
 	position: relative;
@@ -330,15 +334,14 @@ ul.menu li a:hover{
 }
 .twoB{
 	width:50%;
-	padding-top: 5%;
     padding-left: 8%;
 	img{
-    	padding-top: 5%;
-    	padding-left: 5%;
+    	margin: 0 auto;
+    	display: block;
 	}
 
 }
-// make it personal
+// uniquely created
 .three{
 		background:#8bccf1;
 		transition: 0.5s all;
@@ -360,10 +363,13 @@ ul.menu li a:hover{
 .threeA{
 	width:50%;
 	img{
-		padding:10%;
-		padding-top:0;
+		padding: 0 10% 0 0;
+    	width: 54%;
+   		margin: 0 auto;
+    	display: block;
 	}
 }
+
 .threeB{
 	width:50%;
 }
@@ -390,48 +396,21 @@ ul.menu li a:hover{
 }
 .fourB{
 	width:50%;
+	display: flex;
+	justify-content: center;
 	img{
-		padding-top: 24%;
-	    padding-left: 10%;
-
+	    padding: 0 0 0 10%;
+    	margin: 0 auto;
+    	display: block;
+    	width:100%;
 	}
-
+}
+.four{
+    padding: 10%;
 }
 // end of colored information section
-// start of filler image
+// start portfolio 
 
-.fillerImage{
-	width:100%;
-	background: url("images/sky1.jpg") fixed;
-    background-size: cover; 
-    background-position: 0 30%;
-    padding:15% 0;
-    position: relative;
-    // background-attachment: fixed;
-}
-.fillerWrapper{
-	background: rgba(255, 255, 255, 0.3);
-	position: absolute;
-	top:0;
-	bottom:0;
-	left:0;
-	right:0;
-}
-
-.portfolioMainTitle{
-	h1{
-		color: black;
-		font-family: "Montserrat","Open Sans","Arial",sans-serif;
-		font-weight: 300;
-		font-size: 2rem;
-	    letter-spacing: 0px;
-	    text-transform: uppercase;
-    	line-height: 42px;
-    	text-align: center;
-    	margin:0;	
-    	padding:20px; 
-	}
-}
 
  .portfolio-info{
  	position: absolute;
@@ -477,7 +456,6 @@ ul.menu li a:hover{
 	    font-family: "raleway", sans-serif;
 	    font-weight: 700;
     	letter-spacing: 1px;
-    	text-transform: lowercase;
     	font-size: 12px;
     	margin-bottom: 5%;
 	}
@@ -518,19 +496,10 @@ ul.menu li a:hover{
     display: block;
 }
 
-.idea{
-	text-align: center;
-	line-height: 1.8;
-	font-size: .9rem;
-	h1{
-		margin:0;
-	}
-	.button{
-		background: #ec9d8c;
-	}
-	.button:hover{
-		background:rgba(193, 129, 115, 0.78);
-	}
+// end of portfolio
+// start of footer
+.footer-wrapper{
+	padding:10% 10% 3% 10%;
 }
 .footer{
 	width:100%;
@@ -575,11 +544,11 @@ ul.menu li a:hover{
 		color: white;
 		font-family: "Montserrat","Open Sans","Arial",sans-serif;
 		font-weight: 300;
-		font-size: 1rem;
+		font-size: 1.1rem;
 	    letter-spacing: 0px;
     	text-align: center;
-    	padding-left: 2%;
-    	padding-right: 2%;
+    	padding: 0 5%;
+    	line-height: 1.5;
 		}
 	a{
 	
@@ -605,6 +574,7 @@ ul.menu li a:hover{
 	display: flex;
     flex-wrap:wrap;
     flex-direction:row;
+    padding-top: 3%;
 }
 .info{
 	width:33.33%;
@@ -616,13 +586,39 @@ ul.menu li a:hover{
  {
 	background: #10ECE4;
 }
+.footer2{
+	background:black;
+	width:100%;
+	color:white;
+	text-align: center;
+	padding:1.5% 0;
+	p{
+		font-size: .8rem;
+		margin:0;
+	}
+}
 
 // RESPONSIVE WORK
 
+@media all and (max-width: 1590px) { 
+	.threeA img{
+		padding-top: 5%;
+		width: 73%;
+	}
+}
+
 @media all and (max-width: 1290px) { 
+	.introBox1 img{
+    	width:50%;
+    }
+
 	.headerCenter h2 {
     	font-size: 1.5rem;
 	}
+	.twoB img{
+	    padding-top: 20%;
+  	}
+ 
 }
 
 @media all and (max-width: 1190px) { 
@@ -645,12 +641,12 @@ ul.menu li a:hover{
     	background-size: cover; 
     }
     .wow {
-  visibility: visible !important;
-  -webkit-animation: none !important;
-     -moz-animation: none !important;
-       -o-animation: none !important;
-      -ms-animation: none !important;
-          animation: none !important;
+  		visibility: visible !important;
+  		-webkit-animation: none !important;
+    	-moz-animation: none !important;
+       	-o-animation: none !important;
+      	-ms-animation: none !important;
+        animation: none !important;
 	}
 }
 
@@ -672,9 +668,9 @@ ul.menu li a:hover{
 	    margin: 0;
 	}
 	.introBox2 p {
-    font-size: .9rem;
-    line-height: 1.7;
-    font-family: raleway,sans-serif;
+    	font-size: .9rem;
+    	line-height: 1.7;
+    	font-family: raleway,sans-serif;
     
 }
     .headerPic{
@@ -683,16 +679,17 @@ ul.menu li a:hover{
     video{
     	display: none !important;
     }
-
-	
-		.five h1, .five h2, .four h1, .four h2, .three h1, .three h2, .two h1, .two h2 {
-    font-family: Montserrat,"Open Sans",Arial,sans-serif;
-    font-weight: 300;
-    font-size: 1.5rem;
-    line-height: 1.7;
-    letter-spacing: 0;
-    text-transform: uppercase;
-    margin: 0;
+    .twoB img{
+		padding-top: 20%;
+	}	
+	.five h1, .five h2, .four h1, .four h2, .three h1, .three h2, .two h1, .two h2 {
+    	font-family: Montserrat,"Open Sans",Arial,sans-serif;
+    	font-weight: 300;
+    	font-size: 1.5rem;
+    	line-height: 1.7;
+    	letter-spacing: 0;
+    	text-transform: uppercase;
+    	margin: 0;
 }
 	 .four p,  .three p,  .two p{
 	 	font-size: .9rem;
@@ -705,12 +702,12 @@ ul.menu li a:hover{
 }
 
 	.wow {
-  visibility: visible !important;
-  -webkit-animation: none !important;
-     -moz-animation: none !important;
-       -o-animation: none !important;
-      -ms-animation: none !important;
-          animation: none !important;
+  		visibility: visible !important;
+ 	 	-webkit-animation: none !important;
+    	-moz-animation: none !important;
+       	-o-animation: none !important;
+      	-ms-animation: none !important;
+        animation: none !important;
 	}
 	ul.menu li a {
     	padding: 10px;
@@ -818,16 +815,11 @@ ul.menu li a:hover{
 	  	padding: 5%;
 	  	text-align: left;
   	}
+  
 
 	.twoA, .twoB, .threeA, .threeB, .fourA, .fourB{
 		width:100%;
 		text-align: left;
-		img{
-			width:60%;
-			margin: 0 auto;
-			display: block;
-		}
-		padding-bottom: 18px;
 	}
 	.introBox2{
 		padding-bottom: 18px;

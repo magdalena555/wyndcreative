@@ -22,7 +22,7 @@
 </div> <!-- end of header section fullpage -->
 <!-- end of header -->
 <!-- start of introduction -->
-<section class="intro wrapper" id="about">
+<section class="intro wrapper section" id="about">
     <!-- left image    -->
      <div class="introBox1 wow fadeInLeft "  data-wow-duration="1s"  data-wow-offset="5">
         <?php $image = get_field('intro-image'); ?>
@@ -43,7 +43,7 @@
 <!-- start of colored information sections -->
 <section class="colorsParent">
     <!-- branding -->
-    <div class="two ">
+    <div class="two section">
         <!-- branding content -->
         <div class="twoA wow fadeInLeft" data-wow-duration="1s" mobile: false>
             <h1><?php the_field("brand-title-one"); ?></h1>
@@ -59,7 +59,7 @@
     </div>
     <!-- end of branding section -->
     <!-- start of personal section -->
-    <div class="three">
+    <div class="three section">
         <!-- cup photo -->
         <div class="threeA wow rotateIn " data-wow-duration="3s"  data-wow-offset="5" data-wow-iteration="2">
             <?php $image = get_field('personal-image'); ?>
@@ -77,7 +77,7 @@
     </div>
     <!-- end of personal work section -->
     <!-- start of deliver in style -->
-    <div class="four">
+    <div class="four section">
         <!-- deliver in style content -->
         <div class="fourA wow fadeInLeft" data-wow-duration="1s">
             <h1>
@@ -99,35 +99,35 @@
 </section> 
 <!-- end of colored information sections -->
 <!-- start of portfolio --> 
-        <!-- portfolio content box -->
-        <div class="portfolio gallery js-flickity" id="portfolio" data-flickity-options='{ "freeScroll": true, "wrapAround": true
-                     }'>
-            <!-- porfolio items -->
-            <?php while( has_sub_field('portfolio') ): ?>
-            <div class="portfolio-item gallery-cell">
-                <!-- portfolio image -->
-               
-                <?php $image = get_sub_field('portfolio-image'); ?>
-                <img src="<?php echo $image['sizes']['large'] ?>">
+<!-- portfolio content box -->
+<div class="portfolio gallery js-flickity section" id="portfolio" data-flickity-options='{ "freeScroll": true, "wrapAround": true
+             }'>
+    <!-- porfolio items -->
+    <?php while( has_sub_field('portfolio') ): ?>
+    <div class="portfolio-item gallery-cell">
+        <!-- portfolio image -->
+       
+        <?php $image = get_sub_field('portfolio-image'); ?>
+        <img src="<?php echo $image['sizes']['large'] ?>">
 
-                <?php $image = get_sub_field("portfolio-image"); ?>
-                <div class="portfolio-image" style="background-image:url(<?php echo $image["url"]; ?>); background-repeat: no-repeat;" > 
-                </div>
-                <!-- portfolio information -->
-                <div class="portfolio-info ">
-                    <h1> <?php the_sub_field('portfolio-title'); ?></h1>
-                    <h2> <?php the_sub_field('portfolio-specs'); ?></h2>
-                    <p> <?php the_sub_field('portfolio-content'); ?></p>
-                    <!-- portfolio link -->
-                    <a class="button" href="<?php the_sub_field('portfolio-link'); ?>">View Live Site</a>
-                </div> 
-            </div>
-            <?php endwhile; ?>
-            <!-- end of portfolio item -->
-        </div> <!-- end of portfolio content box -->
+        <?php $image = get_sub_field("portfolio-image"); ?>
+        <div class="portfolio-image" style="background-image:url(<?php echo $image["url"]; ?>); background-repeat: no-repeat;" > 
+        </div>
+        <!-- portfolio information -->
+        <div class="portfolio-info ">
+            <h1> <?php the_sub_field('portfolio-title'); ?></h1>
+            <h2> <?php the_sub_field('portfolio-specs'); ?></h2>
+            <p> <?php the_sub_field('portfolio-content'); ?></p>
+            <!-- portfolio link -->
+            <a class="button" href="<?php the_sub_field('portfolio-link'); ?>">View Live Site</a>
+        </div> 
+    </div>
+    <?php endwhile; ?>
+    <!-- end of portfolio item -->
+</div> <!-- end of portfolio content box -->
 <!-- end of portfolio section -->
 <!-- start of footer -->
-<section class="footer wrapper " id="contact">
+<section class="footer footer-wrapper section" id="contact">
         <div class="footerFilter"></div>
         <div class=" footerContent">
             <!-- windmill -->
@@ -165,6 +165,10 @@
             </div>  -->
         </div>
 </section>
+<section class="footer2">
+    <p>© Magdalena Marie</p>
+</section>
+
 
 
 <?php get_footer(); ?>
