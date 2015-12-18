@@ -11,8 +11,6 @@
   <link href='https://fonts.googleapis.com/css?family=Alex+Brush|Raleway|Lato|Montserrat' rel='stylesheet' type='text/css'>
   
   <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/animate.css">
-   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-
 
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
